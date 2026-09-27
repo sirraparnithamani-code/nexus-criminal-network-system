@@ -1,0 +1,166 @@
+.evidence-page {
+  min-height: 100vh;
+
+  padding: 42px;
+
+  background: #11161a;
+  color: #e8e6df;
+}
+
+.evidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 32px;
+}
+
+.evidence-header p {
+  margin: 0 0 8px;
+
+  color: #a88a55;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.evidence-header h1 {
+  margin: 0 0 7px;
+
+  color: #e8e6df;
+
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.evidence-header span {
+  color: #7f898e;
+
+  font-size: 14px;
+}
+
+.evidence-header button {
+  padding: 11px 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #607886;
+
+  color: #11161a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.evidence-header button:hover {
+  background: #718c9b;
+}
+
+.evidence-table {
+  overflow: hidden;
+
+  background: #1a2228;
+
+  border: 1px solid #2e393f;
+  border-radius: 8px;
+}
+
+.evidence-table-header,
+.evidence-row {
+  display: grid;
+
+  grid-template-columns:
+    100px
+    1fr
+    120px
+    130px;
+
+  gap: 20px;
+
+  align-items: center;
+
+  padding: 17px 20px;
+}
+
+.evidence-table-header {
+  background: #202a30;
+
+  color: #68757b;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.evidence-row {
+  min-height: 62px;
+
+  border-top: 1px solid #293239;
+
+  color: #7d888d;
+
+  font-size: 12px;
+}
+
+.evidence-row strong {
+  color: #d1d2cd;
+
+  font-weight: 500;
+}
+
+.evidence-status {
+  width: fit-content;
+
+  padding: 5px 8px;
+
+  border-radius: 4px;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.evidence-status.processed {
+  background: #263b3b;
+
+  color: #8daaa0;
+}
+
+.evidence-status.pending {
+  background: #3a3428;
+
+  color: #b5a06e;
+}
+
+.evidence-row:hover {
+  background: #202a30;
+}
+
+@media (max-width: 700px) {
+  .evidence-page {
+    padding: 28px 20px;
+  }
+
+  .evidence-table-header {
+    display: none;
+  }
+
+  .evidence-row {
+    grid-template-columns: 1fr;
+
+    gap: 7px;
+
+    padding: 18px;
+  }
+
+  .evidence-header {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+}

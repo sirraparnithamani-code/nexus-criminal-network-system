@@ -1,0 +1,12 @@
+{
+  "name": "criminal-network-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Criminal Network System - Root workspace",
+  "scripts": {
+    "dev": "npm --prefix frontend-react run dev",
+    "frontend": "npm --prefix frontend-react run dev",
+    "build": "npm --prefix frontend-react run build",
+    "start": "npm --prefix frontend-react run dev"
+  }
+}

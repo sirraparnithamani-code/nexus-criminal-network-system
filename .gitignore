@@ -1,0 +1,28 @@
+# React
+frontend-react/node_modules/
+frontend-react/dist/
+
+# Python cache
+nexus-backend-/**/__pycache__/
+nexus-backend-/**/*.pyc
+nexus-backend-/.venv/
+nexus-backend-/venv/
+
+# Generated backend output
+nexus-backend-/criminal_network/output/
+
+# Backend local libraries/generated files
+nexus-backend-/criminal_network/lib/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+

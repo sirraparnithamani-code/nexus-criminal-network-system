@@ -1,0 +1,194 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 14px;
+
+  background: #151c21;
+  border-right: 1px solid #2b353b;
+
+  color: #e8e6df;
+  z-index: 10;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 4px 10px 28px;
+
+  border-bottom: 1px solid #293239;
+}
+
+.sidebar-logo {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: #607886;
+  color: #11161a;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sidebar-brand strong {
+  display: block;
+
+  color: #e8e6df;
+
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.sidebar-brand span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #707b80;
+
+  font-size: 9px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding-top: 25px;
+}
+
+.nav-title {
+  margin: 0 10px 9px;
+
+  color: #687379;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.nav-title:not(:first-child) {
+  margin-top: 25px;
+}
+
+.nav-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 3px;
+  padding: 10px 11px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #8d9699;
+
+  font-size: 12px;
+  text-align: left;
+
+  transition: 0.2s ease;
+}
+
+.nav-item span {
+  width: 17px;
+
+  color: #707b80;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+.nav-item:hover {
+  background: #202a30;
+  color: #d3d5d1;
+}
+
+.nav-item.active {
+  background: #26343d;
+  color: #e0e1dc;
+}
+
+.nav-item.active span {
+  color: #a9bdc7;
+}
+
+.sidebar-bottom {
+  padding-top: 15px;
+  border-top: 1px solid #293239;
+}
+
+.logout-button {
+  width: 100%;
+
+  margin-top: 5px;
+  padding: 9px 11px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #866666;
+
+  font-size: 12px;
+  text-align: left;
+}
+
+.logout-button:hover {
+  background: #2b2224;
+  color: #b98282;
+}
+
+.dashboard-main {
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 70px;
+    padding: 20px 10px;
+  }
+
+  .sidebar-brand {
+    justify-content: center;
+    padding: 0 0 20px;
+  }
+
+  .sidebar-brand div:last-child,
+  .nav-title {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 11px 5px;
+  }
+
+  .dashboard-main {
+    margin-left: 70px;
+  }
+
+  .logout-button {
+    text-align: center;
+  }
+}

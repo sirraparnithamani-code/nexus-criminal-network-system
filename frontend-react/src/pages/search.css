@@ -1,0 +1,128 @@
+.search-page,
+.investigation-page,
+.graph-page,
+.timeline-page,
+.evidence-page {
+  min-height: 100vh;
+  padding: 42px;
+
+  background: #11161a;
+  color: #e8e6df;
+}
+
+.search-header p {
+  margin: 0 0 8px;
+
+  color: #a88a55;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.search-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.search-header span {
+  color: #7f898e;
+  font-size: 14px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+
+  margin: 32px 0 18px;
+}
+
+.search-box input {
+  flex: 1;
+
+  padding: 14px;
+
+  background: #1a2228;
+
+  border: 1px solid #303a40;
+  border-radius: 7px;
+
+  color: #e8e6df;
+
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 25px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #607886;
+  color: #11161a;
+
+  font-weight: 700;
+}
+
+.search-filters {
+  display: flex;
+  gap: 8px;
+
+  margin-bottom: 24px;
+}
+
+.search-filters button {
+  padding: 8px 13px;
+
+  border: 1px solid #303a40;
+  border-radius: 5px;
+
+  background: #1a2228;
+  color: #858f93;
+
+  font-size: 11px;
+}
+
+.search-filters .filter-active {
+  background: #26343d;
+  color: #c8d2d5;
+  border-color: #607886;
+}
+
+.search-results {
+  display: grid;
+  gap: 12px;
+}
+
+.result-card {
+  padding: 20px;
+
+  background: #1a2228;
+  border: 1px solid #2e393f;
+  border-radius: 8px;
+}
+
+.result-card span {
+  color: #a88a55;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.result-card h2 {
+  margin: 8px 0 5px;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.result-card p {
+  margin: 0;
+
+  color: #727d82;
+
+  font-size: 12px;
+}

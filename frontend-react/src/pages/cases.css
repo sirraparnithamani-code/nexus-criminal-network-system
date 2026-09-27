@@ -1,0 +1,229 @@
+.cases-page {
+  min-height: 100vh;
+  padding: 42px;
+  background: #11161a;
+  color: #e8e6df;
+}
+
+/* HEADER */
+
+.cases-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-bottom: 32px;
+}
+
+.cases-eyebrow {
+  margin: 0 0 8px;
+
+  color: #a88a55;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.cases-header h1 {
+  margin: 0 0 7px;
+
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.cases-header p:last-child {
+  margin: 0;
+
+  color: #7f898e;
+  font-size: 14px;
+}
+
+.new-case-button {
+  padding: 11px 17px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #607886;
+  color: #11161a;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.new-case-button:hover {
+  background: #718c9b;
+}
+
+/* TOOLBAR */
+
+.cases-toolbar {
+  display: flex;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.cases-toolbar input {
+  flex: 1;
+
+  padding: 12px 14px;
+
+  background: #1a2228;
+  border: 1px solid #303a40;
+  border-radius: 6px;
+
+  color: #e8e6df;
+
+  font-family: inherit;
+  outline: none;
+}
+
+.cases-toolbar input::placeholder {
+  color: #697479;
+}
+
+.cases-toolbar input:focus {
+  border-color: #607886;
+}
+
+.cases-toolbar select {
+  width: 150px;
+
+  padding: 12px;
+
+  background: #1a2228;
+  border: 1px solid #303a40;
+  border-radius: 6px;
+
+  color: #aeb5b5;
+
+  font-family: inherit;
+  outline: none;
+}
+
+/* CASE LIST */
+
+.cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding: 22px 24px;
+
+  background: #1a2228;
+  border: 1px solid #2d383e;
+  border-radius: 8px;
+
+  transition: border-color 0.2s ease;
+}
+
+.case-card:hover {
+  border-color: #45545c;
+}
+
+.case-id {
+  color: #7e929e;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.case-main h2 {
+  margin: 7px 0 6px;
+
+  color: #deded8;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.case-main p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #727d82;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.case-details {
+  min-width: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 9px;
+
+  color: #68747a;
+
+  font-size: 10px;
+}
+
+.case-status {
+  padding: 5px 9px;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.case-status.active {
+  background: #263b3b;
+  color: #8daaa0;
+}
+
+.case-status.review {
+  background: #3a3428;
+  color: #b5a06e;
+}
+
+.case-status.closed {
+  background: #30363a;
+  color: #92999b;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .cases-page {
+    padding: 28px 20px;
+  }
+
+  .cases-header {
+    flex-direction: column;
+  }
+
+  .cases-toolbar {
+    flex-direction: column;
+  }
+
+  .cases-toolbar select {
+    width: 100%;
+  }
+
+  .case-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .case-details {
+    align-items: flex-start;
+  }
+}
